@@ -1,0 +1,84 @@
+body {
+    width: 1200px;
+    padding: 50px;
+    margin: auto;
+    background: #57585b;
+    font-family: Georgia, serif;
+}
+
+a {
+    color: blue;
+}
+
+.top-panel {
+    text-align: center;
+    padding: 100px 0px 10px 0px;
+    background: #f9fafc;
+}
+
+.left-panel {
+    float: left;
+    width: 30%;
+    height: 1850px;
+    background: #f9fafc;
+}
+
+.inside-left-panel, .inside-right-panel {
+    padding: 10px 50px;
+}
+
+.left-links, .left-skills {
+    text-align: center;
+    padding: 30px 0px 30px 30px;
+}
+
+.right-panel {
+    float: right;
+    width: 70%;
+    height: 1850px;
+    background: #f9fafc;
+}
+
+.right-profile, .right-employment, .right-education, .right-certification, .right-reference {
+    padding: 20px;
+}
+
+p.profile {
+    padding: 20px;
+}
+
+.right-employment img, .right-education img {
+    float: left;
+    padding-right: 30px;
+}
+
+.top-panel img {
+    width: 100px;
+}
+
+.right-employment img {
+    height: 80px;
+}
+
+.right-education img {
+    height: 60px;
+}
+
+.date {
+    font-style: italic;
+    font-size: 13px;
+    color: gray;
+}
+
+@media all {
+    .page-break {
+        display: none;
+    }
+}
+
+@media print {
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+}
