@@ -1,8 +1,8 @@
 body {
-    width: 1200px;
-    padding: 50px;
-    margin: auto;
-    background: #57585b;
+    width      : 1200px;
+    padding    : 50px;
+    margin     : auto;
+    background : #57585b;
     font-family: Georgia, serif;
 }
 
@@ -12,34 +12,40 @@ a {
 
 .top-panel {
     text-align: center;
-    padding: 100px 0px 10px 0px;
+    padding   : 100px 0px 10px 0px;
     background: #f9fafc;
 }
 
 .left-panel {
-    float: left;
-    width: 30%;
-    height: 1850px;
+    float     : left;
+    width     : 20%;
+    height    : 2000px;
     background: #f9fafc;
 }
 
-.inside-left-panel, .inside-right-panel {
+.inside-left-panel,
+.inside-right-panel {
     padding: 10px 50px;
 }
 
-.left-links, .left-skills {
+.left-links,
+.left-skills {
     text-align: center;
-    padding: 30px 0px 30px 30px;
+    padding   : 30px 0px 30px 30px;
 }
 
 .right-panel {
-    float: right;
-    width: 70%;
-    height: 1850px;
+    float     : right;
+    width     : 80%;
+    height    : 2000px;
     background: #f9fafc;
 }
 
-.right-profile, .right-employment, .right-education, .right-certification, .right-reference {
+.right-profile,
+.right-employment,
+.right-education,
+.right-certification,
+.right-reference {
     padding: 20px;
 }
 
@@ -47,8 +53,9 @@ p.profile {
     padding: 20px;
 }
 
-.right-employment img, .right-education img {
-    float: left;
+.right-employment img,
+.right-education img {
+    float        : left;
     padding-right: 30px;
 }
 
@@ -66,8 +73,8 @@ p.profile {
 
 .date {
     font-style: italic;
-    font-size: 13px;
-    color: gray;
+    font-size : 13px;
+    color     : gray;
 }
 
 @media all {
@@ -78,7 +85,8 @@ p.profile {
 
 @media print {
     .page-break {
-        display: block;
+        display          : block;
         page-break-before: always;
+        height           : 100px;
     }
 }
