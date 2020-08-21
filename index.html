@@ -104,16 +104,15 @@
                 certifications: [],
                 references: []
             },
-            created() {
-                fetch('./kevin_khew.json').then(response => response.json())
-                    .then(response => {
-                        this.profile = response.data.profile
-                        this.skills = response.data.skill
-                        this.employments = response.data.employment
-                        this.educations = response.data.education
-                        this.certifications = response.data.certification
-                        this.references = response.data.reference
-                    })
+            async created() {
+                let response = await fetch('./kevin_khew.json')
+                response = await response.json()
+                this.profile = response.data.profile
+                this.skills = response.data.skill
+                this.employments = response.data.employment
+                this.educations = response.data.education
+                this.certifications = response.data.certification
+                this.references = response.data.reference
             }
         })
     </script>
