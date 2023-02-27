@@ -23,7 +23,7 @@ a {
 .left-panel {
     float     : left;
     width     : 20%;
-    height    : 2200px;
+    height    : 2500px;
     background: #f9fafc;
 }
 
@@ -41,7 +41,7 @@ a {
 .right-panel {
     float     : right;
     width     : 80%;
-    height    : 2200px;
+    height    : 2500px;
     background: #f9fafc;
 }
 
@@ -58,11 +58,16 @@ p.profile {
 }
 
 .right-employment img,
-.right-education img,
+.right-education img {
+    float        : left;
+    padding-right: 30px;
+    width        : 100px;
+}
+
 .right-certification img {
     float        : left;
     padding-right: 30px;
-    width: 100px;
+    width        : 80px;
 }
 
 .date {

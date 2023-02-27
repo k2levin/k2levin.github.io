@@ -52,7 +52,7 @@
                         <img v-bind:src="employment.img_url" v-bind:alt="employment.img_alt">
                         <p class="date" v-html="employment.date"></p>
                         <p v-html="employment.description"></p>
-                        <br />
+                        <br>
                         <div class="page-break" v-if="index === 3"></div>
                     </div>
                 </div>
@@ -74,14 +74,14 @@
                 <div class="right-certification">
                     <h3><i class="fas fa-scroll"></i>&nbsp;CERTIFICATIONS</h3>
                     <div v-for="certification in certifications">
-                        <h4 v-html="certification.title"></h4>
                         <img v-bind:src="certification.img_url" v-bind:alt="certification.img_alt">
+                        <h4 v-html="certification.title"></h4>
                         <p class="date" v-html="certification.date"></p>
-                        <p v-html="certification.description"></p>
+                        <br>
                     </div>
                 </div>
 
-                <hr>
+                <hr><div class="page-break"></div>
 
                 <div class="right-reference">
                     <h3><i class="fas fa-id-card"></i>&nbsp;REFERENCES</h3>

@@ -101,11 +101,25 @@
     ],
     "certification": [
       {
-        "title": "<a href=\"https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2018-12-31&ci=AWS00735519\" target=\"_blank\">AWS Certified Cloud Practitioner</a>",
-        "description": "&nbsp;",
-        "img_url": "./image/aws.png",
-        "img_alt": "AWS",
-        "date": "Dec 2018 &rarr; Jan 2022"
+        "title": "<a href=\"https://www.credly.com/badges/8ec13863-1d07-4c02-a7dc-3d98aef33b75\" target=\"_blank\">AWS Certified Cloud Practitioner</a>",
+        "description": "",
+        "img_url": "./image/aws_clf.png",
+        "img_alt": "aws_certified_cloud_practitioner",
+        "date": "Jul 2022 &rarr; Sep 2025"
+      },
+      {
+        "title": "<a href=\"https://www.credly.com/badges/f70076a8-5865-4f33-a47d-844246b03640\" target=\"_blank\">AWS Certified Solutions Architect - Associate</a>",
+        "description": "",
+        "img_url": "./image/aws_saa.png",
+        "img_alt": "aws_certified_solutions_architect_associate",
+        "date": "Aug 2022 &rarr; Aug 2025"
+      },
+      {
+        "title": "<a href=\"https://www.credly.com/badges/35a35152-a287-407d-8547-fa6438aa800a\" target=\"_blank\">AWS Certified Developer - Associate</a>",
+        "description": "",
+        "img_url": "./image/aws_dva.png",
+        "img_alt": "aws_certified_developer_associate",
+        "date": "Sep 2022 &rarr; Sep 2025"
       }
     ],
     "reference": [
