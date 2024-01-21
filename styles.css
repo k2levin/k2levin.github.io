@@ -76,6 +76,14 @@ p.profile {
     color     : gray;
 }
 
+.img-zoom-2:hover {
+    transform: scale(2);
+}
+
+.img-zoom-5:hover {
+    transform: scale(5);
+}
+
 @media all {
     .page-break {
         display: none;

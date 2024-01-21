@@ -2,11 +2,11 @@
   "status": "success",
   "data": {
     "profile": {
-      "name": "KEVIN KHEW FAN KWANG",
+      "name": "Kevin Khew Fan Kwang",
       "img_url": "./image/kevinkhew.png",
       "img_alt": "kevinkhew",
       "position": "DevSecFinBizOps",
-      "country": "MALAYSIA",
+      "country": "Malaysia",
       "email": "k2leving@gmail.com",
       "linkedin": "https://linkedin.com/in/kevin-khew",
       "stackoverflow": "https://stackoverflow.com/cv/k2levin",
@@ -92,8 +92,9 @@
     ],
     "education": [
       {
-        "title": "<a href=\"http://www.utar.edu.my\" target=\"_blank\">UNIVERSITY OF TUNKU ABDUL RAHMAN (UTAR)</a>, PETALING JAYA",
+        "title": "UNIVERSITY OF TUNKU ABDUL RAHMAN (UTAR)",
         "description": "<strong>Degree: Bachelor's Degree of Engineering</strong><br />Course name: Computer Engineering",
+        "link": "https://www.utar.edu.my",
         "img_url": "./image/utar.png",
         "img_alt": "utar",
         "date": "May 2006 &rarr; Dec 2009"
@@ -101,39 +102,46 @@
     ],
     "certification": [
       {
-        "title": "<a href=\"https://www.credly.com/badges/8ec13863-1d07-4c02-a7dc-3d98aef33b75\" target=\"_blank\">AWS Certified Cloud Practitioner</a>",
+        "title": "AWS Certified Cloud Practitioner",
         "description": "",
+        "link": "https://www.credly.com/badges/8ec13863-1d07-4c02-a7dc-3d98aef33b75",
         "img_url": "./image/aws_clf.png",
         "img_alt": "aws_certified_cloud_practitioner",
         "date": "Jul 2022 &rarr; Sep 2025"
       },
       {
-        "title": "<a href=\"https://www.credly.com/badges/f70076a8-5865-4f33-a47d-844246b03640\" target=\"_blank\">AWS Certified Solutions Architect - Associate</a>",
+        "title": "AWS Certified Solutions Architect - Associate",
         "description": "",
+        "link": "https://www.credly.com/badges/f70076a8-5865-4f33-a47d-844246b03640",
         "img_url": "./image/aws_saa.png",
         "img_alt": "aws_certified_solutions_architect_associate",
         "date": "Aug 2022 &rarr; Aug 2025"
       },
       {
-        "title": "<a href=\"https://www.credly.com/badges/35a35152-a287-407d-8547-fa6438aa800a\" target=\"_blank\">AWS Certified Developer - Associate</a>",
+        "title": "AWS Certified Developer - Associate",
         "description": "",
+        "link": "https://www.credly.com/badges/35a35152-a287-407d-8547-fa6438aa800a",
         "img_url": "./image/aws_dva.png",
         "img_alt": "aws_certified_developer_associate",
         "date": "Sep 2022 &rarr; Sep 2025"
+      },
+      {
+        "title": "Laravel Certified Developer",
+        "description": "",
+        "link": "https://exam.laravelcert.com/is/kevin-khew-fan-kwang/certified-since/2022-02-20",
+        "img_url": "./image/laravel_cert.png",
+        "img_alt": "laravel_certified_developer",
+        "date": "Feb 2022"
       }
     ],
     "reference": [
       {
-        "name": "Francis Pang",
-        "linkedin_url": "https://www.linkedin.com/in/francis-pang-5569569b/"
-      },
-      {
         "name": "Jeremy Hor",
-        "linkedin_url": "https://www.linkedin.com/in/jeremyhor/"
+        "link": "https://www.linkedin.com/in/jeremyhor/"
       },
       {
         "name": "Ogbemudia Terry Osayawe",
-        "linkedin_url": "https://www.linkedin.com/in/terdia/"
+        "link": "https://www.linkedin.com/in/terdia/"
       }
     ]
   }

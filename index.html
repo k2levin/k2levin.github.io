@@ -9,13 +9,13 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-    <title>KEVIN KHEW FAN KWANG</title>
+    <title>Kevin Khew Fan Kwang</title>
 </head>
 
 <body>
     <div id="app">
         <div class="top-panel">
-            <img v-bind:src="profile.img_url" v-bind:alt="profile.img_alt">
+            <img :src="profile.img_url" :alt="profile.img_alt">
             <h1>{{ profile.name }}</h1>
             <p>
                 <i class="fas fa-laptop-code"></i>&nbsp;{{ profile.position }}&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -38,9 +38,9 @@
             <div class="inside-right-panel">
                 <div class="right-profile">
                     <h3><i class="fas fa-user"></i>&nbsp;PROFILE</h3>
-                    <p><i class="fab fa-linkedin"></i>&nbsp;<a v-bind:href="profile.linkedin" target="_blank">{{ profile.linkedin }}</a></p>
-                    <p><i class="fab fa-stack-overflow"></i>&nbsp;<a v-bind:href="profile.stackoverflow" target="_blank">{{ profile.stackoverflow }}</a></p>
-                    <p><i class="fab fa-github"></i>&nbsp;<a v-bind:href="profile.github" target="_blank">{{ profile.github }}</a></p>
+                    <p><i class="fab fa-linkedin"></i>&nbsp;<a :href="profile.linkedin" target="_blank">{{ profile.linkedin }}</a></p>
+                    <p><i class="fab fa-stack-overflow"></i>&nbsp;<a :href="profile.stackoverflow" target="_blank">{{ profile.stackoverflow }}</a></p>
+                    <p><i class="fab fa-github"></i>&nbsp;<a :href="profile.github" target="_blank">{{ profile.github }}</a></p>
                 </div>
 
                 <hr>
@@ -49,7 +49,7 @@
                     <h3><i class="fas fa-briefcase"></i>&nbsp;EMPLOYMENT HISTORY</h3>
                     <div v-for="(employment, index) in employments">
                         <h4 v-html="employment.title"></h4>
-                        <img v-bind:src="employment.img_url" v-bind:alt="employment.img_alt">
+                        <img :src="employment.img_url" :alt="employment.img_alt">
                         <p class="date" v-html="employment.date"></p>
                         <p v-html="employment.description"></p>
                         <br>
@@ -62,8 +62,10 @@
                 <div class="right-education">
                     <h3><i class="fas fa-graduation-cap"></i>&nbsp;EDUCATION</h3>
                     <div v-for="education in educations">
-                        <h4 v-html="education.title"></h4>
-                        <img v-bind:src="education.img_url" v-bind:alt="education.img_alt">
+                        <a :href="education.link" target="_blank">
+                            <h4>{{ education.title }}</h4>
+                            <img :src="education.img_url" :alt="education.img_alt">
+                        </a>
                         <p class="date" v-html="education.date"></p>
                         <p v-html="education.description"></p>
                     </div>
@@ -73,10 +75,13 @@
 
                 <div class="right-certification">
                     <h3><i class="fas fa-scroll"></i>&nbsp;CERTIFICATIONS</h3>
-                    <div v-for="certification in certifications">
-                        <img v-bind:src="certification.img_url" v-bind:alt="certification.img_alt">
-                        <h4 v-html="certification.title"></h4>
-                        <p class="date" v-html="certification.date"></p>
+                    <div v-for="cert in certifications">
+                        <a :href="cert.link" target="_blank">
+                            <img :src="cert.img_url" :alt="cert.img_alt" class="img-zoom-2"
+                                :class="{ 'img-zoom-5': cert.title === 'Laravel Certified Developer' }">
+                            <h4>{{ cert.title }}</h4>
+                        </a>
+                        <p class="date" v-html="cert.date"></p>
                         <br>
                     </div>
                 </div>
@@ -86,7 +91,7 @@
                 <div class="right-reference">
                     <h3><i class="fas fa-id-card"></i>&nbsp;REFERENCES</h3>
                     <div v-for="reference in references">
-                        <p><strong>{{ reference.name }}</strong>&nbsp;-&nbsp;<a v-bind:href="reference.linkedin_url" target="_blank">{{ reference.linkedin_url }}</a></p>
+                        <p><strong>{{ reference.name }}</strong>&nbsp;-&nbsp;<a :href="reference.link" target="_blank">{{ reference.link }}</a></p>
                     </div>
                 </div>
             </div>
